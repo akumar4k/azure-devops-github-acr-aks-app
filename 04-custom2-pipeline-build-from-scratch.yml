@@ -27,7 +27,7 @@ stages:
           Dockerfile: '**/Dockerfile'
           tags: |
            $(tag)
-           $(Build.BuildId) 
+           $(Build.SourceVersion)
            
       - task: CopyFiles@2
         inputs:
